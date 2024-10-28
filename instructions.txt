@@ -1,0 +1,20 @@
+How to run:
+===========
+
+1. Set python env and install streamlit
+
+    python3 -m venv venv  # create venv
+    venv/bin/activate   # activate venv
+    pip install streamlit # install streamlit
+
+2. Initialize and run the component template frontend:
+
+    cd template/my_component/frontend
+    npm install    # Install npm dependencies
+    npm run start  # Start the Webpack dev server
+
+3. From a separate terminal, run the template's Streamlit app:
+    
+    .venv/Scripts/activate  # activate the venv you created earlier
+    pip install -e . # install template as editable package
+    streamlit run my_component/example.py  # run the example
